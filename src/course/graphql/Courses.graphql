@@ -1,0 +1,29 @@
+query Courses($cursor: String) {
+  courses(first: 12, after: $cursor)  {
+    totalCount,
+    pageInfo {
+      hasNextPage,
+      hasPreviousPage,
+      endCursor
+    },
+    edges {
+      node {
+        id,
+        code,
+        type,
+        title,
+        address,
+        city,
+        country,
+        description,
+        price,
+        discount_price,
+        currency,
+        start_date,
+        end_date,
+        max_attendees,
+      },
+      cursor
+    }
+  }
+}

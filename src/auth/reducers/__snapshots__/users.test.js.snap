@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Reducer: Users Return default state 1`] = `Array []`;
+
+exports[`#Reducer: Users Return state 1`] = `
+Array [
+  "data",
+]
+`;
+
+exports[`#Reducer: Users When Action RECEIVE_USERS return state 1`] = `
+Array [
+  "Eduard",
+]
+`;

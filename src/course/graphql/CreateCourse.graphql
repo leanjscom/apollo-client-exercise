@@ -1,0 +1,33 @@
+mutation createCourse(
+  $code: String!,
+  $type: CourseTypeEnum!,
+  $title: String!,
+  $address: String,
+  $city: String!,
+  $country: String,
+  $description: String!,
+  $price: Int!,
+  $discount_price: Int!,
+  $currency: String!,
+  $start_date: DateTime!,
+  $end_date: DateTime!,
+  $max_attendees: Int!
+) {
+  createCourse(course: {
+    code: $code,
+    type: $type,
+    title: $title,
+    address: $address,
+    city: $city,
+    country: $country,
+    description: $description,
+    price: $price,
+    discount_price: $discount_price,
+    currency: $currency,
+    start_date: $start_date,
+    end_date: $end_date,
+    max_attendees: $max_attendees
+  }) {
+    id
+  }
+}

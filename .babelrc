@@ -1,0 +1,53 @@
+{
+  "plugins": [
+    "syntax-flow",
+    "transform-flow-strip-types",
+    "babel-plugin-transform-class-properties",
+    [
+      "babel-plugin-transform-object-rest-spread",
+      {
+        "useBuiltIns": true
+      }
+    ],
+    [
+      "babel-plugin-transform-react-jsx",
+      {
+        "useBuiltIns": true
+      }
+    ],
+    [
+      "babel-plugin-transform-runtime",
+      {
+        "helpers": false,
+        "polyfill": false,
+        "regenerator": true
+      }
+    ],
+    [
+      "babel-plugin-transform-regenerator",
+      {
+        "async": false
+      }
+    ],
+    "babel-plugin-syntax-dynamic-import",
+    "transform-react-inline-elements",
+    "transform-react-constant-elements",
+    "react-hot-loader/babel"
+  ],
+  "presets": [
+    "flow",
+    [
+      "babel-preset-latest",
+      {
+        "targets": {
+          "ie": 9,
+          "uglify": true
+        },
+        "useBuiltIns": false,
+        "modules": false
+      }
+    ],
+    "stage-0",
+    "react"
+  ]
+}

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Return an Action tyoe LOG_OUT 1`] = `
+Object {
+  "type": "LOG_OUT",
+}
+`;
+
+exports[`Return an Action tyoe LOGGED_IN 1`] = `
+Object {
+  "token": "123456",
+  "type": "LOGGED_IN",
+}
+`;

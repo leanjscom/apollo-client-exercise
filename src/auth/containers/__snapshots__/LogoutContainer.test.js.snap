@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LogoutContainer /> <ConnectedLogoutContainer /> should render connected component 1`] = `
+<Connect(LogoutContainer)
+  color=""
+  logout={[Function]}
+  router={
+    Object {
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "isActive": [Function],
+      "push": [Function],
+      "replace": [Function],
+      "setRouteLeaveHook": [Function],
+    }
+  }
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+/>
+`;
+
+exports[`<LogoutContainer /> should render with default props 1`] = `
+<Logout
+  color=""
+  logout={[Function]}
+  logoutUser={[Function]}
+  params={
+    Object {
+      "username": "123",
+    }
+  }
+  router={
+    Object {
+      "push": [Function],
+    }
+  }
+/>
+`;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Return an Action tyoe RECEIVE_WORKSHOPS 1`] = `
+Object {
+  "type": "RECEIVE_WORKSHOPS",
+  "workshops": Array [
+    "Reactjs Fundamentals",
+  ],
+}
+`;

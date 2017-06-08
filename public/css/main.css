@@ -1,0 +1,94 @@
+body {
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.app-bar h1 {
+	color: white !important;
+}
+/*
+#root {
+	display: flex;
+	height: 100vh;
+}
+*/
+
+/* remove this when react fiber is released and use the one above #root  */
+#root .app {
+	display: flex;
+	height: 100vh;
+}
+
+#root .app-bar {
+	display: flex;
+	flex: 0 0 auto;
+}
+
+#root  .main-view {
+	display: flex;
+	overflow: hidden;
+	flex: 1;
+	flex-flow: row wrap;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	justify-content: flex-start;
+	order: 0;
+	flex-flow: column nowrap;
+	align-items: stretch;
+}
+
+#root .view-container {
+	display: flex;
+	flex: 1;
+}
+
+#root .view-container > div {
+	flex: 1;
+	overflow-y: auto;
+	/*margin: 8px;*/
+}
+
+.form-signin {
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.form-signin .form-signin-heading {
+	margin-bottom: 10px;
+}
+
+.form-signin .form-control {
+	position: relative;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+
+.form-signin input[type="email"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}

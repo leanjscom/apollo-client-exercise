@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Reducer: Workshop Return default state 1`] = `null`;
+
+exports[`#Reducer: Workshop Return state 1`] = `"data"`;
+
+exports[`#Reducer: Workshop When Action RECEIVE_WORKSHOP return state 1`] = `"React Fundamentals"`;

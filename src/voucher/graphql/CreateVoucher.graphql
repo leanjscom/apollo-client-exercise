@@ -1,0 +1,3 @@
+mutation createVoucher{
+  IMPLEMENT_ME
+}

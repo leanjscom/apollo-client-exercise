@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Reducer: Session Return default state 1`] = `
+Object {
+  "token": undefined,
+}
+`;
+
+exports[`#Reducer: Session Return state 1`] = `
+Object {
+  "token": true,
+}
+`;
+
+exports[`#Reducer: Session When Action LOG_OUT return state 1`] = `
+Object {
+  "token": null,
+}
+`;
+
+exports[`#Reducer: Session When Action LOGGED_IN return state 1`] = `
+Object {
+  "token": true,
+}
+`;

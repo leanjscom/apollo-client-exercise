@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Reducer: Workshop Return default state 1`] = `Array []`;
+
+exports[`#Reducer: Workshop Return state 1`] = `
+Array [
+  "data",
+]
+`;
+
+exports[`#Reducer: Workshop When Action RECEIVE_WORKSHOPS return state 1`] = `
+Array [
+  "React Fundamentals",
+]
+`;

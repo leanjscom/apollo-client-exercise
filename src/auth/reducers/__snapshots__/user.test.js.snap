@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#Reducer: User Return default state 1`] = `null`;
+
+exports[`#Reducer: User Return state 1`] = `"data"`;
+
+exports[`#Reducer: User When Action RECEIVE_USER return state 1`] = `"Eduard"`;

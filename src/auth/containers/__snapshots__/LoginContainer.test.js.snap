@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoginContainer /> should render with default props 1`] = `
+<Login
+  handleChange={[Function]}
+  handleSubmit={[Function]}
+  password=""
+  username=""
+/>
+`;

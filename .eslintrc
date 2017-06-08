@@ -1,0 +1,42 @@
+{
+  "extends": [
+    "babel",
+    "prettier",
+    "airbnb",
+    "standard",
+    "plugin:flowtype/recommended"
+  ],
+  "globals": {
+    "fetch": true,
+    "sinon": true,
+    "localStorage": true,
+    "sessionStorage": true,
+    "context": true,
+    "describe": false,
+    "it": false,
+    "beforeEach": false,
+    "afterEach": false,
+    "before": false,
+    "after": false,
+    "expect": true,
+    "fail": true,
+    "src": true,
+    "sync": true,
+    "test": true,
+    "root": true
+  },
+  "plugins": [
+    "flowtype"
+  ],
+  "rules": {
+    "import/no-extraneous-dependencies": [2, { }],
+    "import/named": 2,
+    "react/forbid-prop-types": 0,
+    "strict": 0
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": false
+    }
+  }
+}

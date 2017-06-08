@@ -1,0 +1,3 @@
+mutation updateVoucher {
+  IMPLEMENT_ME
+}

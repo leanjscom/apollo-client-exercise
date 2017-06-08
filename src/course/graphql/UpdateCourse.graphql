@@ -1,0 +1,48 @@
+mutation updateCourse(
+  $id: ID!,
+  $code: String!,
+  $type: CourseTypeEnum!,
+  $title: String!,
+  $address: String,
+  $city: String!,
+  $country: String,
+  $description: String!,
+  $price: Int!,
+  $discount_price: Int!,
+  $currency: String!,
+  $start_date: DateTime!,
+  $end_date: DateTime!,
+  $max_attendees: Int!
+) {
+  updateCourse(course: {
+    id: $id,
+    code: $code,
+    type: $type,
+    title: $title,
+    address: $address,
+    city: $city,
+    country: $country,
+    description: $description,
+    price: $price,
+    discount_price: $discount_price,
+    currency: $currency,
+    start_date: $start_date,
+    end_date: $end_date,
+    max_attendees: $max_attendees
+  }) {
+    id,
+    code,
+    type,
+    title,
+    address,
+    city,
+    country,
+    description,
+    price,
+    discount_price,
+    currency,
+    start_date,
+    end_date,
+    max_attendees,
+  }
+}
