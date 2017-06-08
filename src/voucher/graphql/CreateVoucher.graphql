@@ -1,3 +1,21 @@
-mutation createVoucher{
-  IMPLEMENT_ME
+#import "./VoucherInfo.graphql"
+
+mutation createVoucher(
+  $code: String!,
+  $description: String,
+  $course_code: String!,
+  $discount_percentage: Int!,
+  $expiration_date: DateTime!,
+  $max_redemptions: Int!
+) {
+  createVoucher(voucher: {
+    code: $code,
+    description: $description,
+    course_code: $course_code,
+    discount_percentage: $discount_percentage,
+    expiration_date: $expiration_date,
+    max_redemptions: $max_redemptions
+  }) {
+    ... VoucherInfo
+  }
 }

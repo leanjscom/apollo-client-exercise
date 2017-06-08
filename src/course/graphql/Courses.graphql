@@ -1,5 +1,7 @@
+#import "./CourseInfo.graphql"
+
 query Courses($cursor: String) {
-  courses(first: 12, after: $cursor)  {
+  courses(first: 7, after: $cursor)  {
     totalCount,
     pageInfo {
       hasNextPage,
@@ -8,20 +10,7 @@ query Courses($cursor: String) {
     },
     edges {
       node {
-        id,
-        code,
-        type,
-        title,
-        address,
-        city,
-        country,
-        description,
-        price,
-        discount_price,
-        currency,
-        start_date,
-        end_date,
-        max_attendees,
+        ...CourseInfo
       },
       cursor
     }

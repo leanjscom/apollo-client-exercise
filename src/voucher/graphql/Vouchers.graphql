@@ -1,3 +1,18 @@
-query {
-  IMPLEMENT_ME
+#import "./VoucherInfo.graphql"
+
+query Vouchers($cursor: String, $orderBy: VouchersOrderingInput) {
+  vouchers(first: 8, after: $cursor, orderBy: $orderBy)  {
+    totalCount,
+    pageInfo {
+      hasNextPage,
+      hasPreviousPage,
+      endCursor
+    },
+    edges {
+      node {
+        ...VoucherInfo
+      },
+      cursor
+    }
+  }
 }

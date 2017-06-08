@@ -22,7 +22,20 @@ const EditVoucher = (props) => {
   const { notifier, router } = props
 
   const save = (variables) => {
-    
+    props
+      .mutate({ variables })
+      .then(({ data }) => {
+        if (props.width !== LARGE) {
+          router.push('/vouchers')
+        }
+        notifier.open({ message: 'The voucher has been saved' })
+      })
+      .catch((err) => {
+        const errorMessages = getErrorMessages(err)
+        errorMessages.map((message) => {
+          notifier.open({ message })
+        })
+      })
   }
 
   let content = null
@@ -58,9 +71,16 @@ EditVoucher.defaultProps = {
   data: {}
 }
 
+const queryVoucher = graphql(VOUCHER_QUERY, {
+  options: ({ params: { id } }) => ({ variables: { id } }),
+  props: mapDataToProps('voucher', 'initialValues')
+})
+
 export default compose(
   withWidth(),
   withDialog,
   withNotifier,
-  withRouter
+  withRouter,
+  graphql(VOUCHER_UPDATE),
+  queryVoucher
 )(EditVoucher)

@@ -1,0 +1,11 @@
+fragment VoucherInfo on Voucher {
+  id,
+  code,
+  description,
+  course_code,
+  discount_percentage,
+  created_at,
+  expiration_date,
+  redemptions,
+  max_redemptions,
+}

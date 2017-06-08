@@ -73,6 +73,26 @@ VoucherList.defaultProps = {
   children: null
 }
 
+const fetchVouchers = graphql(VOUCHERS_QUERY, {
+  options: () => ({ ...vouchersQueryVariables }),
+  props ({ data }) {
+    const { vouchers, fetchMore } = data
+
+    return {
+      data,
+      loadMoreEntries: throttle(() =>
+        fetchMore(
+          fetchMoreParams({
+            query: VOUCHERS_QUERY,
+            name: 'vouchers',
+            data: vouchers,
+            variables: vouchersQueryVariables.variables
+          })
+        ))
+    }
+  }
+})
+
 export default compose(
-  withRouter
+  withRouter, fetchVouchers
 )(VoucherList)
