@@ -9,7 +9,7 @@ This repo contains some exercise to help you learn the following:
 
 ## Exercise part 1
 
-http://ec2-52-37-127-60.us-west-2.compute.amazonaws.com:8080/graphiql
+http://ec2-35-176-58-126.eu-west-2.compute.amazonaws.com:8080/graphiql
 
 * Query a list of courses
 * Query a single course by id
@@ -21,7 +21,7 @@ http://ec2-52-37-127-60.us-west-2.compute.amazonaws.com:8080/graphiql
 
 ## How to install
 
-- `git clone git@github.com:alexlbr/apollo-client-exercise.git`
+- `git clone git@github.com:leanjscom/apollo-client-exercise.git`
 - `cd apollo-client-exercise`
 - `npm install` or `yarn install`
 - `npm start`
