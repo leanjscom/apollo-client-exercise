@@ -11,7 +11,7 @@ import Root from './app/components/Root'
 injectTapEventPlugin()
 
 const networkInterface = createBatchingNetworkInterface({
-  uri: 'http://ec2-52-37-127-60.us-west-2.compute.amazonaws.com:8080/graphql',
+  uri: 'http://ec2-35-176-58-126.eu-west-2.compute.amazonaws.com:8080/graphql',
   batchInterval: 10
 })
 
